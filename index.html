@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Travel</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <img height="100px" width="100px" src="images/logo.png" alt="">
+                <div>
+                    <h2 id="c-cart">0</h2>
+                    <img height="50px" width="50px" src="images/cart.png" alt="">
+                </div>
+                <h2 class="second-h2">Setting</h2>
+                <img height="100px" width="100px" src="images/man.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner section -->
+        <section>
+            <div class="banner-container">
+                <div class="left-container">
+                    <h1 class="heading1">Let`s Travel</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate soluta cupiditate ratione ipsam saepe maiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, veniam? at?</p>
+                    <h2>Total budget : <span id="budget">900</span> $</h2>
+                </div>
+                <div>
+                    <img src="images/banner.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- card-container -->
+        <section>
+        <div class="full-box">
+            <div class="container1">
+                <div class="card-container">
+                    <div>
+                        <img class="card-container-img" width="170px" height="150px" src="images/shajek.jpg" alt="">
+                    </div>
+                    <div class="head-right">
+                        <h3>Shajek</h3>
+                        <h4>cost : <span class="spent">300</span> $</h4>
+                        <div class="btn-p">
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div>
+                        <img class="card-container-img" width="170px" height="150px" src="images/shajek.jpg" alt="">
+                    </div>
+                    <div class="head-right">
+                        <h3>Dhaka</h3>
+                        <h4>cost : <span class="spent">300</span> $</h4>
+                        <div class="btn-p">
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div>
+                        <img class="card-container-img" width="170px" height="150px" src="images/shajek.jpg" alt="">
+                    </div>
+                    <div class="head-right">
+                        <h3>Khulna</h3>
+                        <h4>cost : <span class="spent">400</span> $</h4>
+                        <div class="btn-p">
+                            <button  class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div>
+                        <img class="card-container-img" width="170px" height="150px" src="images/shajek.jpg" alt="">
+                    </div>
+                    <div class="head-right">
+                        <h3>Cox's Bazar</h3>
+                        <h4>cost : <span class="spent">500</span> $</h4>
+                        <div class="btn-p">
+                            <button  class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-cost">
+                <h2>Cart</h2>
+                <hr>
+                <ul id="cost-container">
+
+                </ul>
+                <hr>
+                <div>
+                    <h2>Total Cost : <span id="sumOf">0</span> $</h2>
+                </div>
+                <div class="allBtn">
+                    <button onclick="grandTotal('bus')"   class="btn">Bus+100</button>
+                    <button onclick="grandTotal('train')" class="btn">Train-200</button>
+                    <button onclick="grandTotal('flight')" class="btn">Flight+500</button>
+                </div>
+                <hr>
+                <div>
+                    <h2>Grand Total :  <span id="Grand-total">0</span> $</h2>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script src="scripts/work-dom.js"></script>
+    </main>
+</body>
+</html>
